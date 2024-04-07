@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stylish Hello World!</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .hello-world {
+        font-size: 4em;
+        color: #333;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        letter-spacing: 2px;
+        transform: rotate(-10deg);
+    }
+
+    .hello-world:before {
+        content: "Hello";
+        color: #ff5252; /* Red */
+    }
+
+    .hello-world:after {
+        content: "World!";
+        color: #3f51b5; /* Blue */
+    }
+</style>
+</head>
+<body>
+    <div class="hello-world"></div>
+</body>
+</html>
